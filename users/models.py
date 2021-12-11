@@ -9,7 +9,7 @@ class CustomUser(AbstractUser):
     order = models.ForeignKey(
         Order,
         on_delete=models.CASCADE,
-        related_name='product',
+        related_name='order',
         blank=True,
         null=True
     )

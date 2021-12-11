@@ -16,8 +16,8 @@ class UserByDateListAPIView(generics.ListAPIView):
 
     def get_queryset(self):
         queryset = CustomUser.objects.all()
-        if self.request.query_params.get('date_joined') is not None:
-            date_joined = datetime.strptime(self.request.query_params.get('date_joined'), '%Y-%m-%d')
+        if self.request.query_params.get('date') is not None:
+            date_joined = datetime.strptime(self.request.query_params.get('date'), '%Y-%m-%d')
             if date_joined is not None:
                 queryset = queryset.filter(date_joined=date_joined)
                 return queryset
