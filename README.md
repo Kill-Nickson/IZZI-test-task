@@ -1,6 +1,6 @@
 ## IZZI-test-task
 
-#Commands to run project locally:
+# Commands to run project locally:
 1. Clone this repo locally.
 2. To install all required libs to your venv run: pip install -r requirements.txt
 3. To setup db run:
@@ -11,7 +11,7 @@
 
 ___
 
-#To try out main features:
+# To try out main features:
 1. Users import:
  - open admin panel;
  - go to Users section;
