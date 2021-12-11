@@ -4,10 +4,13 @@
 1. Clone this repo locally.
 2. To install all required libs to your venv run: pip install -r requirements.txt
 3. To setup db run:
- - python manage.py makemigrations
- - python manage.py migrate
-4. For testing issues create super user running the next command: python manage.py createsuperuser
-5. Run server with the command: python manage.py runserver
+ - fill test_task/settings.py/DATABASES with your postgresql server credentials; 
+ - python manage.py makemigrations;
+ - python manage.py migrate.
+4. For testing issues create super user running the next command: 
+ - python manage.py createsuperuser
+6. Run server with the command: 
+ - python manage.py runserver
 
 ___
 
